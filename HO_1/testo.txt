@@ -1,0 +1,2 @@
+Esercizio 1: Usando i Linux Socket scrivere un server (server_udp.c) ed un client (client_udp.c) che realizzino una comunicazione bidirezionale basata su UDP.
+Esercizio 2: Listare, attraverso l'opportuno tool da riga di comando, il file descriptor relativo al programma precedente ed analizzarne l'output.

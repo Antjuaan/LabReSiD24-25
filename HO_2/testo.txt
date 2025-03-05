@@ -1,0 +1,5 @@
+Usando i Linux Socket scrivere un server bloccante (server tcp block.c), un server non bloccante
+(server tcp nonblock.c) ed un client (client tcp.c) che realizzino una comunicazione basata su
+TCP. Il client deve inviare la successione dei numeri di fibonacci, mentre il server deve ef-
+fetturare un controllo sulla successione ed inviare una stringa di acknowledgment (attenzione,
+diverso da ACK!).

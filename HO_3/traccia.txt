@@ -1,0 +1,9 @@
+Realizzare un server TCP usando la tecnica dell’I/O Multiplexing che accetti connessioni multiple
+(define MAX CLIENTS 10) dal client fornito dal docente durante la lezione precedente1. Il server
+deve stampare a video la stringa inviata dai client, permettendo di distinguere un client dall’altro,
+e quindi spedire ai client una stringa di ack.
+
+Alcuni suggerimenti:
+1. non è necessario utilizzare nessuna particolare struttura dati
+2. si specifica che la lista dei file descriptor (master fd ritornato da socket() e client fd
+ritornati da accept()) è UNICA a livello kernel.

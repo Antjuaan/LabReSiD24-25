@@ -1,0 +1,5 @@
+Realizzare un server Linux TCP ad alte prestazioni usando epoll() (non portabile su altri
+s.o.) che accetti connessioni multiple (define MAX EVENTS 10). 
+
+Il server deve stampare a video la stringa inviata dai client, 
+permettendo di distinguere un client dall’altro.

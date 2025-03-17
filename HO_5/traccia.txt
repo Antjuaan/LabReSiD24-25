@@ -1,0 +1,1 @@
+Analizzare il codice fornito dal docente (ICMP_raw.c) commentando il significato di ogni istruzione.

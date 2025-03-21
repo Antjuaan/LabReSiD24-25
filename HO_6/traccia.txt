@@ -1,0 +1,12 @@
+Dato il server multicast (sender) (multicast server.c) fornito dal docente scrivere in C un client
+multicast che riceva la stringa di testo inviata dal server. Deve essere possibile lanciare più istanze
+del client che si aggiungano come membri al gruppo multicast.
+
+Passi implementativi:
+1. Creare un socket UDP
+2. Settare il socket in SO REUSEADDR. In caso di socket UDP/Multicast permette a più processi
+di ricevere traffico sullo stesso gruppo/porta multicast
+3. Bindare su INADDR ANY
+4. Aggiungere il socket al gruppo multicast utilizzando IP ADD MEMBERSHIP (setsockopt)
+5. Ricevere i dati
+6. Abbandonare il gruppo multicast con IP DROP MEMBERSHIP (setsockopt)

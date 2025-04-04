@@ -1,0 +1,23 @@
+1. Ricerca multithreading di numeri primi
+
+Data la funzione is prime() realizzare un programma multithreading che distribuisce il carico
+della ricerca dei numeri primi da 1 a define MAX NUMBER 1000000 su define MAX THREAD 4.
+
+'''C
+bool is_prime(int n) {
+    if (n <= 1) return false;
+    if (n == 2) return true;
+    if (n % 2 == 0) return false;
+
+    for (int i = 3; i * i <= n; i += 2) {
+        if (n % i == 0) return false;
+    }
+    return true;
+}
+'''
+
+
+2. Affinity: associazione thread/core
+Dopo aver studiato il sorgente thread affinity.c modificare l’esercizio precedente associando i
+thread lanciati ai primi MAX THREAD cores. Verificare, da un altro terminale, con watch -n 0.5
+’ps -eLo pid,tid,psr,cmd | grep thread affinity’

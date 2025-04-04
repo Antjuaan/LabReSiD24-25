@@ -1,0 +1,32 @@
+1. Analisi del codice: Tipi di variabili e tabella dei simboli
+
+Compilare, senza linkare, il file sottostante ed osservare la tabella dei simboli con nm compren-
+dendo e giustificando ogni colonna dell’output (indirizzo, tipologia (b,d,t,u,r), nome del
+simbolo), man nm. Aggiungere/eliminare casualmente delle
+variabili ed usare size --format=GNU per osservare la crescita dei segmenti text,data,bss.
+
+'''C
+#include <stdio.h>
+
+int a;
+static int b = 10;
+
+void funzione() {
+    static int c = 5;
+    int d = 20;
+    c++;
+    d++;
+}
+
+int main() {
+    funzione();
+    return 0;
+}
+'''
+
+
+2. Analisi del codice: Compilazione modulare
+
+Compilare con make il programma modulare sottostante ed osservare la tabella dei simboli gener-
+ate con nm tramite make check comprendendo e giustificando ogni colonna dell’output (indirizzo,
+tipologia (b,d,t,u,r), nome del simbolo), man nm.

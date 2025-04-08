@@ -1,0 +1,10 @@
+Grafi di precedenza e parallelismo
+
+Sia data l’equazione y = (2 * 6) + (1 + 4) * (5 - 2).
+Si ripassino i meccanismi per il passaggio degli argomenti ai threads e per catturare i valori di
+ritorno dei threads.
+
+• Dopo aver definito (su carta) il grafo di precedenza per l’equazione, scrivere un programma
+C modulare che, usando pi`u thread realizzi il grafo.
+• Si realizzi lo stesso programma in Python :D
+• E’ possibile fare la stessa cosa con i processi? Usando quali funzioni?

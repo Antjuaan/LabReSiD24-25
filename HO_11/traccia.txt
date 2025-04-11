@@ -1,0 +1,14 @@
+Meccanismi di sincronizzazione
+
+1. Realizzare, senza utilizzare meccanismi di sincronizzazione, un programma che lancia define
+NUM THREADS 10 threads che abbiano una singola sezione critica contenente una singola risorsa
+condivisa (variabile intera) da incrementare unitariamente define MAX VALUE 10000 volte.
+Ogni thread deve stampare su stdout il proprio ID ed il valore della variabile. Osservare il
+comportamento del programma.
+
+2. Realizzare, utilizzando gli opportuni meccanismi di sincronizzazione, lo stesso programma del
+punto precedente che mostri il risultato atteso. Osservarne il comportamento.
+
+3. Realizzare, utilizzando gli opportuni meccanismi di sincronizzazione, un NUOVO programma
+(non utilizzare il codice precedente) che lancia 5 thread identici. Solo due possono entrare in
+sezione critica contemporaneamente.

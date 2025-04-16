@@ -1,0 +1,11 @@
+Semafori
+
+1. Realizzare, usando i semafori, un meccanismo di barriera che faccia partire N thread tutti
+allo stesso momento.
+2. Realizzare, usando il meccanismo dei semafori, un sistema produttore-consumatore con buffer
+finito. Il produttore non può produrre più elementi della dimensione del buffer, il consumatore
+non può consumare più elementi della dimensione del buffer.
+
+N.B. Un semaforo (anche quello stradale) può essere immaginato come un meccanismo di
+segnalazione. Cosa deve attendere il consumatore e quando? Cosa deve segnalare? Cosa deve
+attendere il produttore e quando? Cosa deve segnalare?

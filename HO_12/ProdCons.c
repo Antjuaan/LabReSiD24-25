@@ -4,7 +4,7 @@
 #include <semaphore.h>
 
 #define BUFFER_SIZE 5
-#define ELEMENTS 10
+#define ELEMENTS 6
 
 // Buffer condiviso
 int buffer[BUFFER_SIZE];

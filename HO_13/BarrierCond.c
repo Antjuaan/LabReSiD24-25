@@ -19,11 +19,14 @@ int cond = 0;
 // Funzione che esegue ogni thread
 void* thread_func(void* arg){
     int id = *(int*)arg;
+
     pthread_mutex_lock(&lock);
     printf("Thread %d in attesa...\n", id);
+
     while(!cond){
         pthread_cond_wait(&queue, &lock);
     }
+    
     printf("Thread %d svegliato!\n", id);
     pthread_mutex_unlock(&lock);
     printf("Thread %d terminato!\n", id);

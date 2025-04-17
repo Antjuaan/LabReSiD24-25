@@ -16,8 +16,9 @@ int cond = 0;
 void* thread_func(void* arg){
     pthread_mutex_lock(&lock);
     printf("Thread figlio in esecuzione...\n");
-    // Simulo del lavoro
+
     sleep(2);
+
     printf("Thread figlio terminato!\n");
     cond = 1;
     pthread_cond_signal(&queue);
@@ -28,12 +29,13 @@ void* thread_func(void* arg){
 // Thread padre
 int main(){
     pthread_t thread;
+
     pthread_mutex_lock(&lock);
     printf("Creazione del thread figlio...\n");
     pthread_create(&thread, NULL, thread_func, NULL);
     
     // Attende il completamento del thread figlio, dunque che la condizione si verifichi
-    while(cond == 0){
+    while(!cond){
         printf("Thread padre in attesa...\n");
         pthread_cond_wait(&queue, &lock);
     }

@@ -1,0 +1,10 @@
+Condition variables
+
+Esercizio 1
+Si supponga non esista la funziona di libreria pthread join(). Si usino le condition variables per
+far attendere al padre la terminazione del thread figlio. ATTENZIONE: non é necessario catturare
+il valore di ritorno del thread figlio.
+
+Esercizio 2
+Realizzare, attraverso le condition variables, un meccanismo di barriera che faccia partire "contem-
+poraneamente" 4 threads.
